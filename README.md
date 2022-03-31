@@ -68,7 +68,7 @@ hatButton.addEventListener('click', () => {
 
     [https://www.piskelapp.com/](https://www.piskelapp.com/)
 
-* Removing all children of an Element in JavaScript:
+* StackOverflow: Removing all children of an Element in JavaScript:
 
     https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
 
