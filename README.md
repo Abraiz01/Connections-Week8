@@ -19,8 +19,7 @@ Given the above constraints, I decided not to go ahead with this idea for now an
 
 The following is the ordered workflow of the socket.io implementation:
 
-<span style="text-decoration:underline;">Hat / Collar / Background Buttons:</span>
-
+_Hat / Collar / Background Buttons:_
 
 
 1. User clicks one of the above buttons
@@ -29,8 +28,7 @@ The following is the ordered workflow of the socket.io implementation:
 4. Server emits back the number to all users: io.sockets.emit
 5. Socket.on for all users, each user receives the number and displays the object (hat/collar/background) from their respective arrays.
 
-<span style="text-decoration:underline;">Sending “Thoughts”:</span>
-
+_Sending “Thoughts”:_
 
 
 1. User clicks on the submit button after entering a message
