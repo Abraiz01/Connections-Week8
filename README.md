@@ -44,7 +44,7 @@ The following is the ordered workflow of the socket.io implementation:
 * In order to get rid of Faiza’s previous “thoughts” every time some user enters a new thought, I cleared the chatMessageArea variable upon detecting a click on the submit button and populated the chatArea with the new thought after the previous message was cleared.
 * I made each drawing on an online drawing app called [Piskel](https://www.piskelapp.com/). I found it very useful to create nice-looking pixelated drawings using a mouse.
 * Since there weren’t a lot of accessories, I decided to loop over the items in each type of accessory every time the button for that accessory was clicked. For example, clicking the ‘Hat’ button multiple times would loop over the different hats stored in the ‘hats’ array.
-* I made use of the modulo operator to loop over each of the items present inside the arrays each time the button for that accessory was clicked. For instance, the following snippet would cause hatNum to continuously iterate over the numbers 0, 1, and 2 as the hatButton is clicked: 
+* I made use of the modulo operator to loop over each of the items present inside the arrays each time the button for that accessory was clicked. For instance, the following snippet would cause `hatNum` to continuously iterate over the numbers 0, 1, and 2 as the `hatButton` is clicked: 
 ```js
 let hatCounter = 0;
 hatButton.addEventListener('click', () => {
