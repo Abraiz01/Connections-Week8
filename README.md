@@ -15,7 +15,7 @@ At first I started off by thinking about a game I could implement using Node, Ex
 
 Given the above constraints, I decided not to go ahead with this idea for now and instead thought about something more doable. I decided to create a fun dress-up game for Faiza the Falcon where users could make Faiza wear different accessories such as hats and collars, and change the background where Faiza was standing. Each change would be seen by every user present on the website. Moreover, each user has the option to input a text message which would appear as one of Faiza’s “thoughts”. Once a user enters a thought, it would appear on every other user’s screen as well.
 
-**<span style="text-decoration:underline;">Workflow:</span>**
+## Workflow:
 
 The following is the ordered workflow of the socket.io implementation:
 
@@ -39,7 +39,7 @@ The following is the ordered workflow of the socket.io implementation:
 4. Server emits back the message to all clients: io.sockets.emit
 5. Socket.on for all users, each user receives the message and it displays for them on their screen.
 
-**<span style="text-decoration:underline;">Challenges and Next Steps:</span>**
+## Challenges and Next Steps:
 
 
 
@@ -60,7 +60,7 @@ hatButton.addEventListener('click', () => {
 * Once the accessory list for each category grows large enough, an inventory list for each accessory type would be useful. The user could then select the accessory directly from the inventory list of the category instead of looping through the entire list one-by-one.
 * In order to implement the previous point, I would like to make more images for the accessories on Piskel, or find more such images on websites such as [Scratch](https://scratch.mit.edu/).
 
-**<span style="text-decoration:underline;">References:</span>**
+## References:
 
 
 
