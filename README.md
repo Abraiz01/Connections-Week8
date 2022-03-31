@@ -3,7 +3,7 @@ Homework for Week#8 using Node, Express, and scoket.io
 
 Glitch link: https://better-iridescent-thunbergia.glitch.me
 
-**<span style="text-decoration:underline;">Inspiration:</span>**
+## Inspiration:
 
 At first I started off by thinking about a game I could implement using Node, Express, and socket.io. I was thinking of creating a game called “Chase” where each user would control their own character and an enemy would chase after them. However, I came across a few difficulties which included:
 
