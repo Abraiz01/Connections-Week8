@@ -44,7 +44,15 @@ The following is the ordered workflow of the socket.io implementation:
 * In order to get rid of Faiza’s previous “thoughts” every time some user enters a new thought, I cleared the chatMessageArea variable upon detecting a click on the submit button and populated the chatArea with the new thought after the previous message was cleared.
 * I made each drawing on an online drawing app called [Piskel](https://www.piskelapp.com/). I found it very useful to create nice-looking pixelated drawings using a mouse.
 * Since there weren’t a lot of accessories, I decided to loop over the items in each type of accessory every time the button for that accessory was clicked. For example, clicking the ‘Hat’ button multiple times would loop over the different hats stored in the ‘hats’ array.
-* I made use of the modulo operator to loop over each of the items present inside the arrays each time the button for that accessory was clicked. For instance, the following snippet would cause hatNum to continuously iterate over the numbers 0, 1, and 2: add snippet
+* I made use of the modulo operator to loop over each of the items present inside the arrays each time the button for that accessory was clicked. For instance, the following snippet would cause hatNum to continuously iterate over the numbers 0, 1, and 2 as the hatButton is clicked: 
+```
+let hatCounter = 0;
+hatButton.addEventListener('click', () => {
+    hatNum = hatCounter % 3; 
+    socket.emit('hatImgNum', hatNum);
+    hatCounter += 1;
+})
+```
 * In order to display only one image at a time, I added the accessories and background to their respective arrays and set their default display to ‘none’. Once an accessory / background button is clicked, all images that belong to that accessory / background are hidden and only the image at the index currently stored in the ‘Num’ variable is shown.
 * I believe that adding a button to clear a particular type of accessory / background would be useful and would definitely look into adding it to the website.
 * Once the accessory list for each category grows large enough, an inventory list for each accessory type would be useful. The user could then select the accessory directly from the inventory list of the category instead of looping through the entire list one-by-one.
