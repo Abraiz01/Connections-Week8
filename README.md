@@ -13,7 +13,7 @@ At first I started off by thinking about a game I could implement using Node, Ex
 * How I would detect collisions between two users in sockets.io (which was a crucial part of my game).
 * How to implement the draw() function in p5 with socket.emit and socket.on.
 
-Given the above constraints, I decided not to go ahead with this idea for now and instead thought about something more doable. I decided to create a fun dress-up game for Faiza the Falcon where users could make Faiza wear different accessories such as hats and collars, and change the background where Faiza was standing. Each change would be seen by every user present on the website. Moreover, each user has the option to input a text message which would appear as one of Faiza’s “thoughts”. Once a user enters a thought, it would ap[pear on every other user’s screen as well.
+Given the above constraints, I decided not to go ahead with this idea for now and instead thought about something more doable. I decided to create a fun dress-up game for Faiza the Falcon where users could make Faiza wear different accessories such as hats and collars, and change the background where Faiza was standing. Each change would be seen by every user present on the website. Moreover, each user has the option to input a text message which would appear as one of Faiza’s “thoughts”. Once a user enters a thought, it would appear on every other user’s screen as well.
 
 **<span style="text-decoration:underline;">Workflow:</span>**
 
